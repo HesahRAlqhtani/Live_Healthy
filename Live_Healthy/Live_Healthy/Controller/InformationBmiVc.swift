@@ -13,7 +13,7 @@ class InformationBmiVc: UIViewController {
     var color : UIColor?
     var advice : String?
     
-    @IBOutlet weak var bmiResult: UILabel!
+    @IBOutlet weak var bmiResultLbl: UILabel!
     
     @IBOutlet weak var adviceLbl: UILabel!
     
@@ -21,7 +21,7 @@ class InformationBmiVc: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bmiResult.text = bmiValue
+        bmiResultLbl.text = bmiValue
         adviceLbl.text = advice
         view.backgroundColor = color
 
@@ -29,7 +29,7 @@ class InformationBmiVc: UIViewController {
     }
     
     @IBAction func reCalculatorBtn(_ sender: UIButton) {
-        dismiss(animated: true, completion:nil)
+        dismiss(animated: false, completion:nil)
         
     }
     

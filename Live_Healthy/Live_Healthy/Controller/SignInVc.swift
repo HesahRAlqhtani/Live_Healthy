@@ -21,6 +21,10 @@ class SignInVc: UIViewController {
       super.viewDidLoad()
     }
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+            performSegue(withIdentifier: "toHome", sender: nil)
+        }
     }
     @IBAction func sginInButton(_ sender: UIButton) {
       validateFileds()
@@ -45,8 +49,9 @@ class SignInVc: UIViewController {
             let alert = UIAlertController(title: "Error", message:"Sorry , we could not find your account." , preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK" , style: .default , handler: nil))
             self?.present(alert, animated : true)
+            self?.performSegue(withIdentifier: "toHome", sender: nil)
            }else {
-            self?.performSegue(withIdentifier: "ToHome", sender: nil)
+            
                }
 
           }

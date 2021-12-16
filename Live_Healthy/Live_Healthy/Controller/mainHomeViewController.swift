@@ -41,6 +41,7 @@ class mainHomeViewController: UIViewController {
         let weight = weightLbl.value
         calculate.calculateBMIResult(height:height,weight:weight)
         performSegue(withIdentifier: "toResult", sender: self)
+        
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toResult"{
