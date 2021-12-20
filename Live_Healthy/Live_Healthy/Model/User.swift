@@ -11,6 +11,9 @@ import UIKit
 class User {
 var name:String?
 var email: String?
+var phone:String?
+var gender:String?
+    
 
 
 
@@ -21,13 +24,15 @@ extension User {
      let user = User()
          user.name = dict["name"] as? String
          user.email = dict["email"] as? String
+         user.phone = dict["phone"] as? String
+         user.gender = dict["gender"] as? String
         return user
     }
-    static func CreateUser(name:String,email:String) -> [String: Any] {
+    static func CreateUser(name:String,email:String,phone:String,gender:String) -> [String: Any] {
        
         let newUser = [
                        "name":name,
-                       "email" :email,
+                       "email" :email,"phone":phone,"gender":gender
                     ] as [String : Any]
         
         return newUser

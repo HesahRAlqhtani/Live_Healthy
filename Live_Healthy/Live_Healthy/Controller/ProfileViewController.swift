@@ -11,10 +11,12 @@ import FirebaseAuth
 
 class ProfileViewController: UIViewController {
     
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var phone: UILabel!
+    @IBOutlet weak var country: UILabel!
+    @IBOutlet weak var gender: UILabel!
     
-    @IBOutlet weak var userName: UITextField!
-    @IBOutlet weak var email: UITextField!
-    @IBOutlet weak var password: UITextField!
     
     var profile : User?
     
@@ -23,8 +25,10 @@ class ProfileViewController: UIViewController {
         
         UserApi.getUser(uid:Auth.auth().currentUser?.uid ?? "") { profile in
             self.profile = profile
-            self.userName.text = profile.name
+            self.name.text = profile.name
             self.email.text = profile.email
+            self.phone.text = profile.phone
+            self.gender.text = profile.gender
 
         }
 

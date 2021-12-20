@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9E02C6E92769CA2A0016691F /* BmiHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C6E82769CA2A0016691F /* BmiHistory.swift */; };
 		9E02C6EB2769CC7C0016691F /* BmiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C6EA2769CC7B0016691F /* BmiApi.swift */; };
-		9E0AE6352768755E007FB598 /* MoodSelctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0AE6342768755E007FB598 /* MoodSelctor.swift */; };
 		9E0AE6372768A2A4007FB598 /* MoodPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0AE6362768A2A4007FB598 /* MoodPage.swift */; };
 		9E0AE6392768A2F7007FB598 /* AdviceVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0AE6382768A2F7007FB598 /* AdviceVc.swift */; };
 		9E0B4B53275F69FB00C0063E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0B4B52275F69FB00C0063E /* AppDelegate.swift */; };
@@ -22,6 +21,10 @@
 		9E0B4B6A275F6E0600C0063E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9E0B4B69275F6E0600C0063E /* FirebaseAnalytics */; };
 		9E0B4B6C275F6E0600C0063E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9E0B4B6B275F6E0600C0063E /* FirebaseAuth */; };
 		9E0B4B6E275F6E0600C0063E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9E0B4B6D275F6E0600C0063E /* FirebaseFirestore */; };
+		9E189587276CBB6700B83E99 /* AdvicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E189586276CBB6700B83E99 /* AdvicesCollectionViewCell.swift */; };
+		9E189589276CE9BF00B83E99 /* Diet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E189588276CE9BF00B83E99 /* Diet.swift */; };
+		9E18958B276D532E00B83E99 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18958A276D532E00B83E99 /* DataTableViewCell.swift */; };
+		9E18958D276D576800B83E99 /* ProtocolImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18958C276D576800B83E99 /* ProtocolImages.swift */; };
 		9E2056DE2761E98A0082EEC1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2056DD2761E98A0082EEC1 /* User.swift */; };
 		9E2056E22761F9280082EEC1 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2056E12761F9280082EEC1 /* UserApi.swift */; };
 		9E3DD181276A1EB30034D950 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3DD180276A1EB30034D950 /* ProfileViewController.swift */; };
@@ -38,7 +41,6 @@
 /* Begin PBXFileReference section */
 		9E02C6E82769CA2A0016691F /* BmiHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiHistory.swift; sourceTree = "<group>"; };
 		9E02C6EA2769CC7B0016691F /* BmiApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiApi.swift; sourceTree = "<group>"; };
-		9E0AE6342768755E007FB598 /* MoodSelctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSelctor.swift; sourceTree = "<group>"; };
 		9E0AE6362768A2A4007FB598 /* MoodPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPage.swift; sourceTree = "<group>"; };
 		9E0AE6382768A2F7007FB598 /* AdviceVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceVc.swift; sourceTree = "<group>"; };
 		9E0B4B4F275F69FB00C0063E /* Live_Healthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Live_Healthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +52,10 @@
 		9E0B4B5E275F69FD00C0063E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E0B4B60275F69FD00C0063E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E0B4B66275F6B9D00C0063E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E189586276CBB6700B83E99 /* AdvicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvicesCollectionViewCell.swift; sourceTree = "<group>"; };
+		9E189588276CE9BF00B83E99 /* Diet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diet.swift; sourceTree = "<group>"; };
+		9E18958A276D532E00B83E99 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		9E18958C276D576800B83E99 /* ProtocolImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolImages.swift; sourceTree = "<group>"; };
 		9E2056DD2761E98A0082EEC1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9E2056E12761F9280082EEC1 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		9E3DD180276A1EB30034D950 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +86,11 @@
 		9E0B4B46275F69FB00C0063E = {
 			isa = PBXGroup;
 			children = (
+				9E189588276CE9BF00B83E99 /* Diet.swift */,
 				9E8A0143276B4F9D007F6F2F /* HistoryBmiTableViewController.swift */,
+				9E18958C276D576800B83E99 /* ProtocolImages.swift */,
+				9E18958A276D532E00B83E99 /* DataTableViewCell.swift */,
+				9E189586276CBB6700B83E99 /* AdvicesCollectionViewCell.swift */,
 				9E8A013F276B2F95007F6F2F /* ProfileSettingsTableViewController.swift */,
 				9E8A0145276B50DD007F6F2F /* HistoryTableViewCell.swift */,
 				9E0B4B51275F69FB00C0063E /* Live_Healthy */,
@@ -121,7 +131,6 @@
 				9E02C6EA2769CC7B0016691F /* BmiApi.swift */,
 				9E55334F27675BA400D69DAA /* CalculatorBmi.swift */,
 				9E55335127675C2200D69DAA /* BMI.swift */,
-				9E0AE6342768755E007FB598 /* MoodSelctor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +232,7 @@
 				9E55335227675C2200D69DAA /* BMI.swift in Sources */,
 				9E55334E276735C300D69DAA /* InformationBmiVc.swift in Sources */,
 				9E55335027675BA400D69DAA /* CalculatorBmi.swift in Sources */,
+				9E18958D276D576800B83E99 /* ProtocolImages.swift in Sources */,
 				9E4708522760CC30004EEDC9 /* SignUpVc.swift in Sources */,
 				9E0B4B57275F69FB00C0063E /* SignInVc.swift in Sources */,
 				9E0AE6372768A2A4007FB598 /* MoodPage.swift in Sources */,
@@ -231,14 +241,16 @@
 				9E02C6E92769CA2A0016691F /* BmiHistory.swift in Sources */,
 				9E0B4B53275F69FB00C0063E /* AppDelegate.swift in Sources */,
 				9E4708542761666B004EEDC9 /* mainHomeViewController.swift in Sources */,
+				9E189589276CE9BF00B83E99 /* Diet.swift in Sources */,
 				9E2056E22761F9280082EEC1 /* UserApi.swift in Sources */,
 				9E0AE6392768A2F7007FB598 /* AdviceVc.swift in Sources */,
+				9E189587276CBB6700B83E99 /* AdvicesCollectionViewCell.swift in Sources */,
 				9E8A0144276B4F9D007F6F2F /* HistoryBmiTableViewController.swift in Sources */,
 				9E8A0140276B2F95007F6F2F /* ProfileSettingsTableViewController.swift in Sources */,
 				9E8A0146276B50DD007F6F2F /* HistoryTableViewCell.swift in Sources */,
 				9E02C6EB2769CC7C0016691F /* BmiApi.swift in Sources */,
+				9E18958B276D532E00B83E99 /* DataTableViewCell.swift in Sources */,
 				9E0B4B55275F69FB00C0063E /* SceneDelegate.swift in Sources */,
-				9E0AE6352768755E007FB598 /* MoodSelctor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

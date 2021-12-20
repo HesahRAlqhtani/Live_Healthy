@@ -21,11 +21,11 @@ class HistoryTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    func BmiBrogress() {
-        BmiApi.getBmi(uid: <#T##String#>, completion: <#T##() -> Void#>)
-        
-        
-    }
+//    func BmiBrogress() {
+//        BmiApi.getBmi(uid: <#T##String#>, completion: <#T##() -> Void#>)
+//        
+//        
+//    }
     
 
     override func setSelected(_ selected: Bool, animated: Bool) {

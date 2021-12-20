@@ -13,7 +13,7 @@ import FirebaseFirestore
 
 class SignInVc: UIViewController {
 
-    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var emaill: UITextField!
     @IBOutlet weak var password: UITextField!
     
     
@@ -33,7 +33,7 @@ class SignInVc: UIViewController {
       performSegue(withIdentifier: "signUp", sender: nil)
     }
     func validateFileds(){
-      if email.text?.isEmpty == true{
+      if emaill.text?.isEmpty == true{
         print("No userNameText")
         return
       }
@@ -44,14 +44,14 @@ class SignInVc: UIViewController {
       login()
       }
     func login(){
-      Auth.auth().signIn(withEmail: email.text!, password: password.text!) { [weak self]authResult, err in
+      Auth.auth().signIn(withEmail: emaill.text!, password: password.text!) { [weak self]authResult, err in
         if let error = err {
             let alert = UIAlertController(title: "Error", message:"Sorry , we could not find your account." , preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK" , style: .default , handler: nil))
             self?.present(alert, animated : true)
-            self?.performSegue(withIdentifier: "toHome", sender: nil)
            }else {
-            
+               self?.performSegue(withIdentifier: "toHome", sender: nil)
+
                }
 
           }
