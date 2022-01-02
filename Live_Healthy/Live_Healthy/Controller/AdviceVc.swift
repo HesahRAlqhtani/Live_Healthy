@@ -19,21 +19,17 @@ class AdviceVc: UIViewController, UICollectionViewDataSource,UICollectionViewDel
     
     
     var arrDitesPhotos = [UIImage(named: "keto1")!,UIImage(named: "health")!,UIImage(named: "health1")!,UIImage(named: "health2")!,UIImage(named: "health3")!,UIImage(named: "health5")!,UIImage(named: "fat1")]
-    var kindOfDiets = [BingImages]()
+    var kindOfDiets = [BringImages]()
     var timer :Timer?
     
-   // var diet = [Diet]()
+    var diet = [Diet]()
     
     
     func mm(){
-        kindOfDiets.append(BingImages(name: "gff", image: UIImage(named: "fat1")!))
-        kindOfDiets.append(BingImages(name: "gff", image: UIImage(named: "fat1")!))
-        kindOfDiets.append(BingImages(name: "gff", image: UIImage(named: "fat1")!))
-        kindOfDiets.append(BingImages(name: "gff", image: UIImage(named: "fat1")!))
-        kindOfDiets.append(BingImages(name: "gff", image: UIImage(named: "fat1")!))
-        
-        
-       // diet.append(Diet(title: "hesah", image: UIImage(named: "health2")!))
+        kindOfDiets.append(BringImages(name: "KETO DIET", image: UIImage(named: "keto")!))
+        kindOfDiets.append(BringImages(name: "FASTING DIET", image: UIImage(named: "fat1")!))
+        kindOfDiets.append(BringImages(name: "LOW CARB DIET", image: UIImage(named: "lowcarb")!))
+      
     }
     var currentCellIndex = 0
     override func viewDidLoad() {

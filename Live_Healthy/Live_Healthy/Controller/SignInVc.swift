@@ -22,9 +22,9 @@ class SignInVc: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if Auth.auth().currentUser != nil {
-            performSegue(withIdentifier: "toHome", sender: nil)
-        }
+//        if Auth.auth().currentUser != nil {
+//            performSegue(withIdentifier: "toHome", sender: nil)
+//        }
     }
     @IBAction func sginInButton(_ sender: UIButton) {
       validateFileds()

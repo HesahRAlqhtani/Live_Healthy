@@ -11,7 +11,7 @@ protocol Images {
 var name : String {get}
 var image : UIImage{get}
 }
-struct BingImages : Images {
+struct BringImages : Images {
 var name: String
 var image: UIImage
     

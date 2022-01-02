@@ -13,6 +13,7 @@ class InformationBmiVc: UIViewController {
     var color : UIColor?
     var advice : String?
     
+    @IBOutlet weak var viewLbl: UIView!
     @IBOutlet weak var bmiResultLbl: UILabel!
     
     @IBOutlet weak var adviceLbl: UILabel!
@@ -23,7 +24,7 @@ class InformationBmiVc: UIViewController {
         super.viewDidLoad()
         bmiResultLbl.text = bmiValue
         adviceLbl.text = advice
-        view.backgroundColor = color
+        viewLbl.backgroundColor = color
 
         // Do any additional setup after loading the view.
     }

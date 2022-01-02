@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftUI
 struct CalcultorBmi {
 
     var bmi : BMI?
@@ -14,13 +13,14 @@ struct CalcultorBmi {
      let bmiValue = (weight/(height * height))
         if bmiValue < 18.5 {
             
-            bmi = BMI(value: bmiValue, advice: "Eat more pies!" , color:#colorLiteral(red: 0.5843137503,green:0.8235294223,blue:0.4196078479,alpha:1))
+            bmi = BMI(value: bmiValue, advice: "YOUR BMI IS UNDERWEIGHT! " , color:#colorLiteral(red:0.4549019661,green:0.350980499,blue:0.2784313732,alpha:0.6))
+                    
         }else if bmiValue < 24.9{
-         bmi = BMI(value: bmiValue, advice: "Fit as a fiddle!", color: #colorLiteral(red:0.5843137503,green:0.8235294223,blue:0.4196078479,alpha:1))
+            bmi = BMI(value: bmiValue, advice: "YOUR BMI IS NORMAL AND IDEAL!", color:#colorLiteral(red:0.1249019691,green:0.333980407,blue:0.4784313223,alpha:0.6))
             
         }else{
             
-            bmi = BMI(value: bmiValue, advice: "Eat fewer pies!", color: #colorLiteral(red:0.8549019694,green:0.250980407,blue:0.4784313738,alpha:1))
+            bmi = BMI(value: bmiValue, advice: "YOUR BMI IS OVERWEIGHT!", color: #colorLiteral(red:0.223459691,green:0.250980407,blue:0.4284319891,alpha:0.6))
         }
         
         

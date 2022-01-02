@@ -13,6 +13,8 @@ class DataTableViewCell: UITableViewCell {
     
     @IBOutlet weak var littlelbl: UILabel!
     
+    
+    
     func setupCell(photo: UIImage , name: String) {
         dataImage1.image = photo
         littlelbl.text = name

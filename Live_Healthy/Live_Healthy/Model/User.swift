@@ -15,8 +15,6 @@ var phone:String?
 var gender:String?
     
 
-
-
 }
 
 extension User {
