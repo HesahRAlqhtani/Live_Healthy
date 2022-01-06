@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseFirestore
 
 class InformationBmiVc: UIViewController {
 
@@ -25,6 +28,7 @@ class InformationBmiVc: UIViewController {
         bmiResultLbl.text = bmiValue
         adviceLbl.text = advice
         viewLbl.backgroundColor = color
+//        UserApi.
 
         // Do any additional setup after loading the view.
     }

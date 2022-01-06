@@ -12,17 +12,15 @@ class BmiHistory {
     var bmiResult :String?
     var date: String?
 
-
-
 }
 
 extension BmiHistory {
     static func getUser(dict:[String: Any])-> BmiHistory {
-     let userhistory = BmiHistory()
+     let userHistory = BmiHistory()
        
-        userhistory.bmiResult = dict["bmiResult"] as? String
-        userhistory.date = dict["date"] as? String
-        return userhistory
+        userHistory.bmiResult = dict["bmiResult"] as? String
+        userHistory.date = dict["date"] as? String
+        return userHistory
     }
     static func CreateUser(bmiResult:String , date:String ) -> [String: Any] {
        

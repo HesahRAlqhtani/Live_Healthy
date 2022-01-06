@@ -54,7 +54,7 @@ class SignUpVc: UIViewController {
                 
             } else {
                 
-                UserApi.addUser(name: self.name.text ?? "", uid: authResult?.user.uid ?? "", email: self.email.text ?? "",phone: self.phone.text ?? "",gender: self.gender.text ?? "", completion:{check in
+                UserApi.addUser(name: self.name.text ?? "", uid: authResult?.user.uid ?? "", email: self.email.text ?? "",phone: self.phone.text ?? "",gender: self.gender.text ?? "", bmiHistory: [BMIValue](), completion:{check in
                     if check {
                         print("Done Saving In Database")
                         self.performSegue(withIdentifier: "toHome", sender: nil)

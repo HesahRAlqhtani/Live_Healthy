@@ -41,7 +41,16 @@ class ProfileViewController: UIViewController {
         
     }
     
-
+    @IBAction func logOutBtn(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        do{
+            try firebaseAuth.signOut()
+            self.dismiss(animated: true, completion: nil)
+        }catch let sinOutError as NSError {
+            print("ERROR Signing Out: %@" ,sinOutError)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

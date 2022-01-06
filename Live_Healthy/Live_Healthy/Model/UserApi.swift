@@ -12,13 +12,19 @@ import Firebase
 
 class UserApi {
    
-        
-    static func addUser(name:String,uid:String,email:String,phone:String,gender:String, completion: @escaping (Bool) -> Void) {
+    static func addHis(uid:String,record:[String]) {
+            
+        let refUsers = Firestore.firestore().collection("Users")
+        refUsers.document(uid).setData(User.addHis(record: record))
+            
+    }
+    
+    static func addUser(name:String,uid:String,email:String,phone:String,gender:String, bmiHistory: [BMIValue] , completion: @escaping (Bool) -> Void) {
             
             let refUsers = Firestore.firestore().collection("Users")
+        
             
-            
-        refUsers.document(uid).setData(User.CreateUser(name: name, email: email,phone:phone,gender: gender ))
+        refUsers.document(uid).setData(User.CreateUser(name: name, email: email,phone:phone,gender: gender, bmiHistory: bmiHistory ))
             
             completion(true)
             

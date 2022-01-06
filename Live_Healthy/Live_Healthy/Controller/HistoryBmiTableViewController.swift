@@ -11,34 +11,61 @@ import Firebase
 import FirebaseFirestore
 
 class HistoryBmiTableViewController: UITableViewController {
-
+    
+    var bmiHistory : User?
+    var bmiValues : [BMIValue] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-    
-            
-            
-            
+
         }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let uid = Auth.auth().currentUser?.uid {
+            UserApi.getUser(uid: uid) { user in
+                self.bmiValues = user.bmiHistory ?? [BMIValue]()
+                self.tableView.reloadData()
+            }
+            
+            }else{
+                
+                
+            }
+    }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+
+        return 1
     }
+//
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return bmiValues.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath) as! HistoryTableViewCell
+        
+        cell.bmiHistLbl.text = "BMI: \(bmiValues[indexPath.row].bmi)"
+        cell.dateLbl.text = bmiValues[indexPath.row].date
+
+        // Configure the cell...
+
+        return cell
+    }
+    
+}
 
     // MARK: - Table view data source
 //
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
-//
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        // #warning Incomplete implementation, return the number of rows
-//        return 0
-//    }
+
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

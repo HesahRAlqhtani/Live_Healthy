@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class mainHomeViewController: UIViewController {
    
@@ -40,7 +41,26 @@ class mainHomeViewController: UIViewController {
         let height = heightSlider.value
         let weight = weightLbl.value
         calculate.calculateBMIResult(height:height,weight:weight)
+        
+        let uid = Auth.auth().currentUser?.uid ?? ""
+        
+        UserApi.getUser(uid: uid) { user in
+            
+            var userBmiHistory = user.bmiHistory
+            let date = Date().formatted(date: .abbreviated, time: .standard)
+            
+
+            userBmiHistory?.append(BMIValue(bmi: self.calculate.getBmiValue(), date: date))
+            
+            UserApi.addUser(name: user.name ?? "", uid: uid, email: user.email ?? "", phone: user.phone ?? "", gender: user.gender ?? "", bmiHistory: userBmiHistory ?? [BMIValue](), completion: { success in
+                
+            })
+        
+            
+        }
+        
         performSegue(withIdentifier: "toResult", sender: self)
+        
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

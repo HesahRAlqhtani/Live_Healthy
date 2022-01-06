@@ -9,7 +9,7 @@ import UIKit
 struct CalcultorBmi {
 
     var bmi : BMI?
-    mutating func calculateBMIResult(height : Float, weight : Float){
+    mutating func calculateBMIResult(height : Float, weight : Float) {
      let bmiValue = (weight/(height * height))
         if bmiValue < 18.5 {
             

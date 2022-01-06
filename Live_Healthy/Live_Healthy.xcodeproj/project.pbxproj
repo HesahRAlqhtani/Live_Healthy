@@ -28,15 +28,18 @@
 		9E18958D276D576800B83E99 /* ProtocolImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18958C276D576800B83E99 /* ProtocolImages.swift */; };
 		9E2056DE2761E98A0082EEC1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2056DD2761E98A0082EEC1 /* User.swift */; };
 		9E2056E22761F9280082EEC1 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2056E12761F9280082EEC1 /* UserApi.swift */; };
+		9E3042FD27839EC500CC2F8E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3042FC27839EC500CC2F8E /* HealthKit.framework */; };
 		9E3DD181276A1EB30034D950 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3DD180276A1EB30034D950 /* ProfileViewController.swift */; };
 		9E4708522760CC30004EEDC9 /* SignUpVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4708512760CC30004EEDC9 /* SignUpVc.swift */; };
 		9E4708542761666B004EEDC9 /* mainHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4708532761666B004EEDC9 /* mainHomeViewController.swift */; };
 		9E55334E276735C300D69DAA /* InformationBmiVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E55334D276735C300D69DAA /* InformationBmiVc.swift */; };
 		9E55335027675BA400D69DAA /* CalculatorBmi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E55334F27675BA400D69DAA /* CalculatorBmi.swift */; };
 		9E55335227675C2200D69DAA /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E55335127675C2200D69DAA /* BMI.swift */; };
+		9E66B0702785AD19009F2403 /* BMIValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E66B06F2785AD18009F2403 /* BMIValue.swift */; };
 		9E8A0140276B2F95007F6F2F /* ProfileSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A013F276B2F95007F6F2F /* ProfileSettingsTableViewController.swift */; };
 		9E8A0144276B4F9D007F6F2F /* HistoryBmiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A0143276B4F9D007F6F2F /* HistoryBmiTableViewController.swift */; };
 		9E8A0146276B50DD007F6F2F /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A0145276B50DD007F6F2F /* HistoryTableViewCell.swift */; };
+		9EA2C1982781A7470023CC69 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA2C1972781A7470023CC69 /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,15 +63,19 @@
 		9E18958C276D576800B83E99 /* ProtocolImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolImages.swift; sourceTree = "<group>"; };
 		9E2056DD2761E98A0082EEC1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9E2056E12761F9280082EEC1 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		9E3042FA27839EC500CC2F8E /* Live_Healthy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Live_Healthy.entitlements; sourceTree = "<group>"; };
+		9E3042FC27839EC500CC2F8E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9E3DD180276A1EB30034D950 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9E4708512760CC30004EEDC9 /* SignUpVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVc.swift; sourceTree = "<group>"; };
 		9E4708532761666B004EEDC9 /* mainHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainHomeViewController.swift; sourceTree = "<group>"; };
 		9E55334D276735C300D69DAA /* InformationBmiVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationBmiVc.swift; sourceTree = "<group>"; };
 		9E55334F27675BA400D69DAA /* CalculatorBmi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBmi.swift; sourceTree = "<group>"; };
 		9E55335127675C2200D69DAA /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		9E66B06F2785AD18009F2403 /* BMIValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIValue.swift; sourceTree = "<group>"; };
 		9E8A013F276B2F95007F6F2F /* ProfileSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsTableViewController.swift; sourceTree = "<group>"; };
 		9E8A0143276B4F9D007F6F2F /* HistoryBmiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryBmiTableViewController.swift; sourceTree = "<group>"; };
 		9E8A0145276B50DD007F6F2F /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		9EA2C1972781A7470023CC69 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E0B4B6A275F6E0600C0063E /* FirebaseAnalytics in Frameworks */,
+				9E3042FD27839EC500CC2F8E /* HealthKit.framework in Frameworks */,
 				9E0B4B6C275F6E0600C0063E /* FirebaseAuth in Frameworks */,
 				9E0B4B6E275F6E0600C0063E /* FirebaseFirestore in Frameworks */,
 			);
@@ -88,15 +96,9 @@
 		9E0B4B46275F69FB00C0063E = {
 			isa = PBXGroup;
 			children = (
-				9E189588276CE9BF00B83E99 /* Diet.swift */,
-				9E8A0143276B4F9D007F6F2F /* HistoryBmiTableViewController.swift */,
-				9E18958C276D576800B83E99 /* ProtocolImages.swift */,
-				9E18958A276D532E00B83E99 /* DataTableViewCell.swift */,
-				9E189586276CBB6700B83E99 /* AdvicesCollectionViewCell.swift */,
-				9E8A013F276B2F95007F6F2F /* ProfileSettingsTableViewController.swift */,
-				9E8A0145276B50DD007F6F2F /* HistoryTableViewCell.swift */,
 				9E0B4B51275F69FB00C0063E /* Live_Healthy */,
 				9E0B4B50275F69FB00C0063E /* Products */,
+				9E3042FB27839EC500CC2F8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +113,7 @@
 		9E0B4B51275F69FB00C0063E /* Live_Healthy */ = {
 			isa = PBXGroup;
 			children = (
+				9E3042FA27839EC500CC2F8E /* Live_Healthy.entitlements */,
 				9E2056E42761FDD40082EEC1 /* Controller */,
 				9E2056E32761FDBC0082EEC1 /* Model */,
 				9E0B4B52275F69FB00C0063E /* AppDelegate.swift */,
@@ -127,12 +130,15 @@
 		9E2056E32761FDBC0082EEC1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9E189588276CE9BF00B83E99 /* Diet.swift */,
 				9E2056DD2761E98A0082EEC1 /* User.swift */,
+				9E18958C276D576800B83E99 /* ProtocolImages.swift */,
 				9E02C6E82769CA2A0016691F /* BmiHistory.swift */,
 				9E2056E12761F9280082EEC1 /* UserApi.swift */,
 				9E02C6EA2769CC7B0016691F /* BmiApi.swift */,
 				9E55334F27675BA400D69DAA /* CalculatorBmi.swift */,
 				9E55335127675C2200D69DAA /* BMI.swift */,
+				9E66B06F2785AD18009F2403 /* BMIValue.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,11 +151,25 @@
 				9E4708532761666B004EEDC9 /* mainHomeViewController.swift */,
 				9E55334D276735C300D69DAA /* InformationBmiVc.swift */,
 				9E0AE6382768A2F7007FB598 /* AdviceVc.swift */,
+				9EA2C1972781A7470023CC69 /* SecondVC.swift */,
 				9E0AE6362768A2A4007FB598 /* MoodPage.swift */,
+				9E8A013F276B2F95007F6F2F /* ProfileSettingsTableViewController.swift */,
 				9E3DD180276A1EB30034D950 /* ProfileViewController.swift */,
+				9E8A0143276B4F9D007F6F2F /* HistoryBmiTableViewController.swift */,
 				9E063EBE277C876200BB5530 /* CoreMotionUser.swift */,
+				9E8A0145276B50DD007F6F2F /* HistoryTableViewCell.swift */,
+				9E189586276CBB6700B83E99 /* AdvicesCollectionViewCell.swift */,
+				9E18958A276D532E00B83E99 /* DataTableViewCell.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		9E3042FB27839EC500CC2F8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E3042FC27839EC500CC2F8E /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,7 +274,9 @@
 				9E8A0146276B50DD007F6F2F /* HistoryTableViewCell.swift in Sources */,
 				9E02C6EB2769CC7C0016691F /* BmiApi.swift in Sources */,
 				9E18958B276D532E00B83E99 /* DataTableViewCell.swift in Sources */,
+				9EA2C1982781A7470023CC69 /* SecondVC.swift in Sources */,
 				9E0B4B55275F69FB00C0063E /* SceneDelegate.swift in Sources */,
+				9E66B0702785AD19009F2403 /* BMIValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +423,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Live_Healthy/Live_Healthy.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZJR8J927ZP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Live_Healthy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -412,7 +435,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,10 +455,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Live_Healthy/Live_Healthy.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZJR8J927ZP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Live_Healthy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -443,7 +467,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

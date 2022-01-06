@@ -24,6 +24,7 @@ class CoreMotionUser: UIViewController {
         startButton.addTarget(self, action: #selector(didTapStartButton), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         guard let startDate = startDate else { return }
