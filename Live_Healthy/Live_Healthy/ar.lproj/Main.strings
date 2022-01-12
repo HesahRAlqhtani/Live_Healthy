@@ -1,0 +1,165 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "0PC-Qy-iaT"; */
+"0PC-Qy-iaT.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Advice"; ObjectID = "1Ea-9T-wzU"; */
+"1Ea-9T-wzU.configuration.title" = " نصائح";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1Ea-9T-wzU"; */
+"1Ea-9T-wzU.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Profile"; ObjectID = "1S4-x4-R03"; */
+"1S4-x4-R03.text" = "الملف الشخصي";
+
+/* Class = "UILabel"; text = "+9664344434"; ObjectID = "27d-ki-vSb"; */
+"27d-ki-vSb.text" = "+9664344434";
+
+/* Class = "UILabel"; text = "Step Counter"; ObjectID = "2eL-nb-hYj"; */
+"2eL-nb-hYj.text" = "عداد الخطوه";
+
+/* Class = "UITextField"; placeholder = "gender"; ObjectID = "2wp-1f-Dhq"; */
+"2wp-1f-Dhq.placeholder" = "الجنس";
+
+/* Class = "UIButton"; configuration.title = "Register!"; ObjectID = "4Uf-Nf-SQg"; */
+"4Uf-Nf-SQg.configuration.title" = "تسجيل!";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4Uf-Nf-SQg"; */
+"4Uf-Nf-SQg.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5P3-Ur-QkO"; */
+"5P3-Ur-QkO.text" = "Label";
+
+/* Class = "UILabel"; text = "Weight"; ObjectID = "6Ny-Qd-hPn"; */
+"6Ny-Qd-hPn.text" = "الوزن";
+
+/* Class = "UILabel"; text = "Saudi Arabia"; ObjectID = "AKL-Kq-X8C"; */
+"AKL-Kq-X8C.text" = "المملكه العربيه السعوديه";
+
+/* Class = "UILabel"; text = "Height"; ObjectID = "CkZ-Cd-R8h"; */
+"CkZ-Cd-R8h.text" = "الطول";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FK4-SL-IN9"; */
+"FK4-SL-IN9.text" = "Label";
+
+/* Class = "UILabel"; text = "Update Typing..."; ObjectID = "FSN-mB-uO6"; */
+"FSN-mB-uO6.text" = "يتم التحديث...";
+
+/* Class = "UILabel"; text = "email:"; ObjectID = "FxV-tY-0kB"; */
+"FxV-tY-0kB.text" = "ايميل:";
+
+/* Class = "UIButton"; configuration.title = "LOGOUT"; ObjectID = "HQc-wN-0Kp"; */
+"HQc-wN-0Kp.configuration.title" = "تسجيل الخروج";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HQc-wN-0Kp"; */
+"HQc-wN-0Kp.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "New Email.."; ObjectID = "Jxp-a3-qT8"; */
+"Jxp-a3-qT8.placeholder" = "ايميل جديد..";
+
+/* Class = "UILabel"; text = "country:"; ObjectID = "LBx-Fj-4MU"; */
+"LBx-Fj-4MU.text" = "الدوله:";
+
+/* Class = "UIButton"; configuration.title = "Sign In"; ObjectID = "LJW-bc-edq"; */
+"LJW-bc-edq.configuration.title" = "دخول";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "LJW-bc-edq"; */
+"LJW-bc-edq.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "activity"; ObjectID = "NUJ-uD-8Zg"; */
+"NUJ-uD-8Zg.text" = "نوع النشاط";
+
+/* Class = "UILabel"; text = "100kg"; ObjectID = "Q5L-hv-MzO"; */
+"Q5L-hv-MzO.text" = "100كج";
+
+/* Class = "UILabel"; text = "1.5m"; ObjectID = "QMf-HF-o45"; */
+"QMf-HF-o45.text" = "1.5م";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "RHH-P2-COi"; */
+"RHH-P2-COi.text" = "Label";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "RxA-Pp-GjH"; */
+"RxA-Pp-GjH.text" = "اللغه";
+
+/* Class = "UITextField"; placeholder = "Enter Your Name.."; ObjectID = "Stc-Kv-hmu"; */
+"Stc-Kv-hmu.placeholder" = "ادخل اسمك..";
+
+/* Class = "UINavigationItem"; title = "Body Mass Sammary"; ObjectID = "Sxf-fm-lKl"; */
+"Sxf-fm-lKl.title" = "ملخص كتله الجسم";
+
+/* Class = "UIButton"; configuration.title = "RECALCULATOR"; ObjectID = "WjR-HM-kpa"; */
+"WjR-HM-kpa.configuration.title" = "اعاده حساب الكتله ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WjR-HM-kpa"; */
+"WjR-HM-kpa.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Y5S-nw-p8a"; */
+"Y5S-nw-p8a.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "YKP-i5-Xq5"; */
+"YKP-i5-Xq5.placeholder" = "الرقم السري";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "b2l-CN-Whs"; */
+"b2l-CN-Whs.placeholder" = "ايميل";
+
+/* Class = "UITableViewSection"; headerTitle = "INFORMATION"; ObjectID = "cEV-dF-lHz"; */
+"cEV-dF-lHz.headerTitle" = "معلومات";
+
+/* Class = "UIButton"; configuration.title = "Start"; ObjectID = "ckx-AM-aeP"; */
+"ckx-AM-aeP.configuration.title" = "بدء";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ckx-AM-aeP"; */
+"ckx-AM-aeP.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "eIt-Pl-aWX"; */
+"eIt-Pl-aWX.text" = "Label";
+
+/* Class = "UILabel"; text = "test@gmail.com"; ObjectID = "fWo-Z9-2MV"; */
+"fWo-Z9-2MV.text" = "test@gmail.com";
+
+/* Class = "UITextField"; placeholder = "phone"; ObjectID = "gOg-ah-cmy"; */
+"gOg-ah-cmy.placeholder" = "الرقم";
+
+/* Class = "UIButton"; configuration.title = "CALCULATE"; ObjectID = "hri-LD-ELW"; */
+"hri-LD-ELW.configuration.title" = "حساب الكتله";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hri-LD-ELW"; */
+"hri-LD-ELW.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Dark Mood"; ObjectID = "hsv-k9-xNz"; */
+"hsv-k9-xNz.text" = "الوضع الليلي";
+
+/* Class = "UILabel"; text = "gender:"; ObjectID = "k9X-lV-ezz"; */
+"k9X-lV-ezz.text" = "الجنس:";
+
+/* Class = "UINavigationItem"; title = "settinges"; ObjectID = "oK4-JV-4ds"; */
+"oK4-JV-4ds.title" = "الاعدادات";
+
+/* Class = "UITableViewSection"; headerTitle = "GENERAL"; ObjectID = "oPT-Wa-Ib6"; */
+"oPT-Wa-Ib6.headerTitle" = "عام";
+
+/* Class = "UILabel"; text = "phone:"; ObjectID = "prh-1r-jhI"; */
+"prh-1r-jhI.text" = "الرقم:";
+
+/* Class = "UILabel"; text = "Eat SOME MORE SNACKS!"; ObjectID = "q4X-Kz-sVp"; */
+"q4X-Kz-sVp.text" = "Eat SOME MORE SNACKS!";
+
+/* Class = "UITextField"; placeholder = "New Password.."; ObjectID = "tD4-sl-7HQ"; */
+"tD4-sl-7HQ.placeholder" = "الرقم السري الجديد..";
+
+/* Class = "UILabel"; text = " Please Calculate Your Body Mass Index"; ObjectID = "u7F-4d-1Yw"; */
+"u7F-4d-1Yw.text" = " فضلا احسب كتله الجسم";
+
+/* Class = "UIButton"; configuration.title = "New User!   SignUp"; ObjectID = "vxf-rf-Nsd"; */
+"vxf-rf-Nsd.configuration.title" = "مستخدم جديد!   تسجيل";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vxf-rf-Nsd"; */
+"vxf-rf-Nsd.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "male"; ObjectID = "wNp-eb-aLD"; */
+"wNp-eb-aLD.text" = "ذكر";
+
+/* Class = "UILabel"; text = "19.5"; ObjectID = "xOV-T0-omD"; */
+"xOV-T0-omD.text" = "19.5";
+
+/* Class = "UILabel"; text = "Typing..."; ObjectID = "zAt-Ef-iTI"; */
+"zAt-Ef-iTI.text" = "كتابه...";

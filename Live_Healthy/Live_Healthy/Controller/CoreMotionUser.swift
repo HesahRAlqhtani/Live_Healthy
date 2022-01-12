@@ -40,14 +40,14 @@ class CoreMotionUser: UIViewController {
 extension CoreMotionUser {
     
     private func onStart() {
-        startButton.setTitle("Stop", for: .normal)
+        startButton.setTitle("Stop".loclaized, for: .normal)
         startDate = Date()
         checkAuthorizationStatus()
         startUpdating()
     }
     
     private func onStop() {
-        startButton.setTitle("Start", for: .normal)
+        startButton.setTitle("Start".loclaized, for: .normal)
         startDate = nil
         stopUpdating()
     }
@@ -56,13 +56,13 @@ extension CoreMotionUser {
         if CMMotionActivityManager.isActivityAvailable() {
             startTrackingActivityType()
         } else {
-            activityTypeLabel.text = "Not available"
+            activityTypeLabel.text = "Not available".loclaized
         }
         
         if CMPedometer.isStepCountingAvailable() {
             startCountingSteps()
         } else {
-            stepsCountLabel.text = "Not available"
+            stepsCountLabel.text = "Not available".loclaized
         }
     }
     
@@ -105,13 +105,13 @@ extension CoreMotionUser {
             guard let activity = activity else { return }
             DispatchQueue.main.async {
                 if activity.walking {
-                    self?.activityTypeLabel.text = "Walking"
+                    self?.activityTypeLabel.text = "Walking".loclaized
                 } else if activity.stationary {
-                    self?.activityTypeLabel.text = "Stationary"
+                    self?.activityTypeLabel.text = "Stationary".loclaized
                 } else if activity.running {
-                    self?.activityTypeLabel.text = "Running"
+                    self?.activityTypeLabel.text = "Running".loclaized
                 } else if activity.automotive {
-                    self?.activityTypeLabel.text = "Automotive"
+                    self?.activityTypeLabel.text = "Automotive".loclaized
                 }
             }
         }

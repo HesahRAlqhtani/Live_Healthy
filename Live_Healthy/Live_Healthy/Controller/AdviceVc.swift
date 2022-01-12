@@ -24,23 +24,23 @@ class AdviceVc: UIViewController, UICollectionViewDataSource,UICollectionViewDel
     
     
     
-    var arrDitesPhotos = [UIImage(named: "keto1")!,UIImage(named: "health")!,UIImage(named: "health1")!,UIImage(named: "health2")!,UIImage(named: "health3")!,UIImage(named: "health5")!,UIImage(named: "fat1")]
+    var arrDitesPhotos = [UIImage(named: "1")!,UIImage(named: "2")!,UIImage(named: "3")!,UIImage(named: "4")!,UIImage(named: "5")!,UIImage(named: "6")!,UIImage(named: "7")]
     var kindOfDiets = [BringImages]()
     var timer :Timer?
     
     var diet = [Diet]()
     
     
-    func mm(){
-        kindOfDiets.append(BringImages(name: "Healthy Food", image: UIImage(named: "healthyfood")!))
-        kindOfDiets.append(BringImages(name: "Sports", image: UIImage(named: "fat1")!))
-        kindOfDiets.append(BringImages(name: "More Tips", image: UIImage(named: "moreAdvice")!))
+    func images(){
+        kindOfDiets.append(BringImages(name: "Healthy Food".loclaized, image: UIImage(named: "healthyFood")!))
+        kindOfDiets.append(BringImages(name: "Sports".loclaized, image: UIImage(named: "fat1")!))
+        kindOfDiets.append(BringImages(name: "More Tips".loclaized, image: UIImage(named: "moreAdvice")!))
       
     }
     var currentCellIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
-        mm()
+        images()
         collectionView.delegate = self
         collectionView.dataSource = self
         pageControl.numberOfPages = arrDitesPhotos.count
@@ -104,17 +104,17 @@ class AdviceVc: UIViewController, UICollectionViewDataSource,UICollectionViewDel
 //    Use switch
         switch indexPath.row {
         case 0:
-        adviceImageGroup = UIImage(named: "healthyfood")
-        lblTitleGroup = "Benefits of healthy eating"
-        desLabelGroup = "Opting for a balanced, adequate and varied diet is an important step towards a happy and healthy lifestyle.Vitamins and minerals in the diet are vital to boost immunity and healthy development,                                                           A healthy diet can protect the human body against certain types of diseases, in particular noncommunicable diseases such as obesity, diabetes, cardiovascular diseases, some types of cancer and skeletal conditions.              Healthy diets can also contribute to an adequate body weight.                              Healthy eating is a good opportunity to enrich life by experimenting with different foods from different cultures, origins and with different ways to prepare food.                    The benefits of eating a wide variety of foods are also emotional, as variety and colour are important ingredients of a balance diet."
+            adviceImageGroup = UIImage(named: "healthyFood")
+            lblTitleGroup = "Benefits of healthy eating".loclaized
+            desLabelGroup = "Opting for a balanced, adequate and varied diet is an important step towards a happy and healthy lifestyle.Vitamins and minerals in the diet are vital to boost immunity and healthy development,                                                           A healthy diet can protect the human body against certain types of diseases, in particular noncommunicable diseases such as obesity, diabetes, cardiovascular diseases, some types of cancer and skeletal conditions.              Healthy diets can also contribute to an adequate body weight.                              Healthy eating is a good opportunity to enrich life by experimenting with different foods from different cultures, origins and with different ways to prepare food.                    The benefits of eating a wide variety of foods are also emotional, as variety and colour are important ingredients of a balance diet.".loclaized
         case 1:
         adviceImageGroup = UIImage(named: "fat1")
-        lblTitleGroup = "The benefits of walking"
-        desLabelGroup = "Walking for 30 minutes or more a day on most days of the week is a great way to improve or maintain your overall health.If you can't manage 30 minutes a day, remember 'Even a little is good, but more is better.'Walking with others can turn exercise into a fun social event.                               See your doctor for a check-up before embarking on any new fitness program, especially if you are over 40, overweight or haven't exercised for a long time."
+            lblTitleGroup = "The benefits of walking".loclaized
+            desLabelGroup = "Walking for 30 minutes or more a day on most days of the week is a great way to improve or maintain your overall health.If you can't manage 30 minutes a day, remember 'Even a little is good, but more is better.'Walking with others can turn exercise into a fun social event.                               See your doctor for a check-up before embarking on any new fitness program, especially if you are over 40, overweight or haven't exercised for a long time.".loclaized
         case 2:
         adviceImageGroup = UIImage(named: "moreAdvice")
-        lblTitleGroup = "more Tips for Your life healthy"
-        desLabelGroup = " Drink more water. Most of us don’t drink enough water every day.                                              Water is essential for our bodies to function. Do you know over 60% of our body is made up of water? Water is needed to carry out body functions, remove waste, and carry nutrients and oxygen around our body. Since we lose water daily through urine, bowel movements, perspiration, and breathing, we need to replenish our water intake,Alse >                                             Get enough sleep. When you don’t rest well, you compensate by eating more. Usually, it’s junk food. Get enough rest and you don’t need to snack to stay awake. Also, lack of sleep causes premature aging and you don’t want that"
+            lblTitleGroup = "more Tips for Your life healthy".loclaized
+            desLabelGroup = "Drink more water. Most of us don’t drink enough water every day.                                              Water is essential for our bodies to function. Do you know over 60% of our body is made up of water? Water is needed to carry out body functions, remove waste, and carry nutrients and oxygen around our body. Since we lose water daily through urine, bowel movements, perspiration, and breathing, we need to replenish our water intake,Alse >                                             Get enough sleep. When you don’t rest well, you compensate by eating more. Usually, it’s junk food. Get enough rest and you don’t need to snack to stay awake. Also, lack of sleep causes premature aging and you don’t want that".loclaized
             
              
         default:

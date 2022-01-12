@@ -22,23 +22,22 @@ class SignInVc: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        if Auth.auth().currentUser != nil {
-            performSegue(withIdentifier: "toHome", sender: nil)
+        checkUserInfo()
         }
-    }
+    
     @IBAction func sginInButton(_ sender: UIButton) {
       validateFileds()
     }
     @IBAction func createNewAccount(_ sender: Any) {
-      performSegue(withIdentifier: "signUp", sender: nil)
+        performSegue(withIdentifier: "signUp", sender: nil)
     }
     func validateFileds(){
       if emaill.text?.isEmpty == true{
-        print("No userNameText")
+          print("No userNameText".loclaized)
         return
       }
       if password.text?.isEmpty == true{
-        print("No Password Text")
+          print("No Password Text".loclaized)
         return
       }
       login()
@@ -46,27 +45,29 @@ class SignInVc: UIViewController {
     func login(){
       Auth.auth().signIn(withEmail: emaill.text!, password: password.text!) { [weak self]authResult, err in
         if let error = err {
-            let alert = UIAlertController(title: "Error", message:"Sorry , we could not find your account." , preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK" , style: .default , handler: nil))
+            let alert = UIAlertController(title: "Error".loclaized, message:"Sorry , we could not find your account.".loclaized , preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK".loclaized , style: .default , handler: nil))
             self?.present(alert, animated : true)
            }else {
                self?.performSegue(withIdentifier: "toHome", sender: nil)
 
                }
-
+          self!.checkUserInfo()
           }
+        
       }
-}
 
 
     func checkUserInfo(){
       if Auth.auth().currentUser != nil {
         print(Auth.auth().currentUser?.uid)
+       performSegue(withIdentifier: "toHome", sender: nil)
+
         }
 }
     
     
-    
+}
     
     
     

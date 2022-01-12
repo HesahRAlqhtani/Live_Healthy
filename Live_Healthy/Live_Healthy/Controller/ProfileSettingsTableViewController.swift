@@ -11,7 +11,17 @@ class ProfileSettingsTableViewController: UITableViewController {
 
     @IBAction func switchApperance(_ sender: Any) {
         
-        changeApperance()
+        if #available(iOS 13.0, *){
+            let appDelegate = UIApplication.shared.windows.first
+            if(sender as AnyObject).isOn {
+                appDelegate?.overrideUserInterfaceStyle = .dark
+                return
+            }
+            appDelegate?.overrideUserInterfaceStyle = .light
+            return
+            
+            
+        }
         
     }
     override func viewDidLoad() {
@@ -26,20 +36,31 @@ class ProfileSettingsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    fileprivate func changeApperance() {
-        if overrideUserInterfaceStyle == .dark {
-            overrideUserInterfaceStyle = .light
-        } else {
-            overrideUserInterfaceStyle = .dark
-        }
-    }
+//    fileprivate func changeApperance() {
+//        if overrideUserInterfaceStyle == .dark {
+//            overrideUserInterfaceStyle = .light
+//        } else {
+//            overrideUserInterfaceStyle = .dark
+//        }
+//        if #available(iOS 13.0, *){
+//            let appDelegate = UIApplication.shared.windows.first
+//            if(sender as AnyObject).isOn {
+//                appDelegate?.overrideUserInterfaceStyle = .dark
+//                return
+//            }
+//            appDelegate?.overrideUserInterfaceStyle = .light
+//            return
+//
+//
+//        }
+//  }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             if indexPath.row == 1 {
                 changeLang()
             } else {
-                changeApperance()
+                
             }
         }
     }

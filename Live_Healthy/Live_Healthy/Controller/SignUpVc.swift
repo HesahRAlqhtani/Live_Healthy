@@ -25,15 +25,15 @@ class SignUpVc: UIViewController {
     
     @IBAction func register(_ sender: UIButton) {
         if name.text?.isEmpty == true {
-            print("No text in user name field")
+            print("No text in user name field".loclaized)
             return
         }
         if email.text?.isEmpty == true {
-            print("No text in email field")
+            print("No text in email field".loclaized)
             return
     }
         if newPass.text?.isEmpty == true {
-            print("No text in password field")
+            print("No text in password field".loclaized)
             return
         }
         

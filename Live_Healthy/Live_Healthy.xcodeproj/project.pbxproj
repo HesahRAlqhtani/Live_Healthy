@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E02C6E92769CA2A0016691F /* BmiHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C6E82769CA2A0016691F /* BmiHistory.swift */; };
-		9E02C6EB2769CC7C0016691F /* BmiApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E02C6EA2769CC7B0016691F /* BmiApi.swift */; };
 		9E063EBF277C876200BB5530 /* CoreMotionUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E063EBE277C876200BB5530 /* CoreMotionUser.swift */; };
 		9E0AE6372768A2A4007FB598 /* MoodPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0AE6362768A2A4007FB598 /* MoodPage.swift */; };
 		9E0AE6392768A2F7007FB598 /* AdviceVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0AE6382768A2F7007FB598 /* AdviceVc.swift */; };
@@ -40,11 +38,11 @@
 		9E8A0144276B4F9D007F6F2F /* HistoryBmiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A0143276B4F9D007F6F2F /* HistoryBmiTableViewController.swift */; };
 		9E8A0146276B50DD007F6F2F /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8A0145276B50DD007F6F2F /* HistoryTableViewCell.swift */; };
 		9EA2C1982781A7470023CC69 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA2C1972781A7470023CC69 /* SecondVC.swift */; };
+		9EFAFE93278EC2210032B6DF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EFAFE92278EC2210032B6DF /* Localizable.strings */; };
+		9EFAFE95278EC3100032B6DF /* LoclaizabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFAFE94278EC3100032B6DF /* LoclaizabelExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9E02C6E82769CA2A0016691F /* BmiHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiHistory.swift; sourceTree = "<group>"; };
-		9E02C6EA2769CC7B0016691F /* BmiApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiApi.swift; sourceTree = "<group>"; };
 		9E063EBE277C876200BB5530 /* CoreMotionUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionUser.swift; sourceTree = "<group>"; };
 		9E0AE6362768A2A4007FB598 /* MoodPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodPage.swift; sourceTree = "<group>"; };
 		9E0AE6382768A2F7007FB598 /* AdviceVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdviceVc.swift; sourceTree = "<group>"; };
@@ -76,6 +74,10 @@
 		9E8A0143276B4F9D007F6F2F /* HistoryBmiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryBmiTableViewController.swift; sourceTree = "<group>"; };
 		9E8A0145276B50DD007F6F2F /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		9EA2C1972781A7470023CC69 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		9EFAFE90278EBE990032B6DF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		9EFAFE91278EBE990032B6DF /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9EFAFE92278EC2210032B6DF /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9EFAFE94278EC3100032B6DF /* LoclaizabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoclaizabelExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,15 +132,18 @@
 		9E2056E32761FDBC0082EEC1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9E189588276CE9BF00B83E99 /* Diet.swift */,
 				9E2056DD2761E98A0082EEC1 /* User.swift */,
-				9E18958C276D576800B83E99 /* ProtocolImages.swift */,
-				9E02C6E82769CA2A0016691F /* BmiHistory.swift */,
 				9E2056E12761F9280082EEC1 /* UserApi.swift */,
-				9E02C6EA2769CC7B0016691F /* BmiApi.swift */,
+				9E189588276CE9BF00B83E99 /* Diet.swift */,
+				9E18958C276D576800B83E99 /* ProtocolImages.swift */,
 				9E55334F27675BA400D69DAA /* CalculatorBmi.swift */,
 				9E55335127675C2200D69DAA /* BMI.swift */,
 				9E66B06F2785AD18009F2403 /* BMIValue.swift */,
+				9EFAFE94278EC3100032B6DF /* LoclaizabelExtension.swift */,
+				9E8A0145276B50DD007F6F2F /* HistoryTableViewCell.swift */,
+				9E189586276CBB6700B83E99 /* AdvicesCollectionViewCell.swift */,
+				9E0AE6362768A2A4007FB598 /* MoodPage.swift */,
+				9EFAFE92278EC2210032B6DF /* Localizable.strings */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,13 +157,10 @@
 				9E55334D276735C300D69DAA /* InformationBmiVc.swift */,
 				9E0AE6382768A2F7007FB598 /* AdviceVc.swift */,
 				9EA2C1972781A7470023CC69 /* SecondVC.swift */,
-				9E0AE6362768A2A4007FB598 /* MoodPage.swift */,
+				9E063EBE277C876200BB5530 /* CoreMotionUser.swift */,
+				9E8A0143276B4F9D007F6F2F /* HistoryBmiTableViewController.swift */,
 				9E8A013F276B2F95007F6F2F /* ProfileSettingsTableViewController.swift */,
 				9E3DD180276A1EB30034D950 /* ProfileViewController.swift */,
-				9E8A0143276B4F9D007F6F2F /* HistoryBmiTableViewController.swift */,
-				9E063EBE277C876200BB5530 /* CoreMotionUser.swift */,
-				9E8A0145276B50DD007F6F2F /* HistoryTableViewCell.swift */,
-				9E189586276CBB6700B83E99 /* AdvicesCollectionViewCell.swift */,
 				9E18958A276D532E00B83E99 /* DataTableViewCell.swift */,
 			);
 			path = Controller;
@@ -219,6 +221,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 9E0B4B46275F69FB00C0063E;
 			packageReferences = (
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EFAFE93278EC2210032B6DF /* Localizable.strings in Resources */,
 				9E0B4B5F275F69FD00C0063E /* LaunchScreen.storyboard in Resources */,
 				9E0B4B67275F6B9D00C0063E /* GoogleService-Info.plist in Resources */,
 				9E0B4B5C275F69FD00C0063E /* Assets.xcassets in Resources */,
@@ -262,9 +266,9 @@
 				9E0AE6372768A2A4007FB598 /* MoodPage.swift in Sources */,
 				9E3DD181276A1EB30034D950 /* ProfileViewController.swift in Sources */,
 				9E2056DE2761E98A0082EEC1 /* User.swift in Sources */,
-				9E02C6E92769CA2A0016691F /* BmiHistory.swift in Sources */,
 				9E0B4B53275F69FB00C0063E /* AppDelegate.swift in Sources */,
 				9E4708542761666B004EEDC9 /* mainHomeViewController.swift in Sources */,
+				9EFAFE95278EC3100032B6DF /* LoclaizabelExtension.swift in Sources */,
 				9E189589276CE9BF00B83E99 /* Diet.swift in Sources */,
 				9E2056E22761F9280082EEC1 /* UserApi.swift in Sources */,
 				9E0AE6392768A2F7007FB598 /* AdviceVc.swift in Sources */,
@@ -272,7 +276,6 @@
 				9E8A0144276B4F9D007F6F2F /* HistoryBmiTableViewController.swift in Sources */,
 				9E8A0140276B2F95007F6F2F /* ProfileSettingsTableViewController.swift in Sources */,
 				9E8A0146276B50DD007F6F2F /* HistoryTableViewCell.swift in Sources */,
-				9E02C6EB2769CC7C0016691F /* BmiApi.swift in Sources */,
 				9E18958B276D532E00B83E99 /* DataTableViewCell.swift in Sources */,
 				9EA2C1982781A7470023CC69 /* SecondVC.swift in Sources */,
 				9E0B4B55275F69FB00C0063E /* SceneDelegate.swift in Sources */,
@@ -287,6 +290,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E0B4B59275F69FB00C0063E /* Base */,
+				9EFAFE90278EBE990032B6DF /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -295,6 +299,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9E0B4B5E275F69FD00C0063E /* Base */,
+				9EFAFE91278EBE990032B6DF /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -367,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
