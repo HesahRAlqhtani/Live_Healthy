@@ -17,8 +17,8 @@ class HistoryBmiTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        }
+        
+    }
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,18 +28,18 @@ class HistoryBmiTableViewController: UITableViewController {
                 self.tableView.reloadData()
             }
             
-            }else{
-                
-                
-            }
+        }else{
+            
+            
+        }
     }
-
-     
+    
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-
+        
         return 1
     }
-//
+    //
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return bmiValues.count
@@ -50,10 +50,10 @@ class HistoryBmiTableViewController: UITableViewController {
         
         cell.bmiHistLbl.text = "BMI: \(bmiValues[indexPath.row].bmi)"
         cell.dateLbl.text = bmiValues[indexPath.row].date
-
+        
         // Configure the cell...
-
+        
         return cell
     }
-
+    
 }

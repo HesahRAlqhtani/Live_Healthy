@@ -21,9 +21,10 @@ class mainHomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-       
+        
+        
     }
+
     
     @IBAction func heightSlidBtn(_ sender: UISlider) {
         let height = (String(format: "%.2f", sender.value))
@@ -41,7 +42,7 @@ class mainHomeViewController: UIViewController {
         let height = heightSlider.value
         let weight = weightLbl.value
         calculate.calculateBMIResult(height:height,weight:weight)
-        
+//     to save data in firebase 
         let uid = Auth.auth().currentUser?.uid ?? ""
         
         UserApi.getUser(uid: uid) { user in
@@ -49,13 +50,13 @@ class mainHomeViewController: UIViewController {
             var userBmiHistory = user.bmiHistory
             let date = Date().formatted(date: .abbreviated, time: .standard)
             
-
+            
             userBmiHistory?.append(BMIValue(bmi: self.calculate.getBmiValue(), date: date))
             
             UserApi.addUser(name: user.name ?? "", uid: uid, email: user.email ?? "", phone: user.phone ?? "", gender: user.gender ?? "", bmiHistory: userBmiHistory ?? [BMIValue](), completion: { success in
                 
             })
-        
+            
             
         }
         
@@ -70,10 +71,10 @@ class mainHomeViewController: UIViewController {
             destinationVc?.color = calculate.getcolor()
             destinationVc?.advice = calculate.getAdvice()
             destinationVc?.modalPresentationStyle = .fullScreen
-
+            
             
         }
-    
+        
     }
     
 }

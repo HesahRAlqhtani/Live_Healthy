@@ -6,21 +6,23 @@
 //
 
 import UIKit
-struct CalcultorBmi {
 
+struct CalcultorBmi {
+//use if for caculate the bmi
     var bmi : BMI?
     mutating func calculateBMIResult(height : Float, weight : Float) {
      let bmiValue = (weight/(height * height))
         if bmiValue < 18.5 {
             
-            bmi = BMI(value: bmiValue, advice: "YOUR BMI IS UNDERWEIGHT! ".loclaized , color:#colorLiteral(red:0.4549019661,green:0.350980499,blue:0.2784313732,alpha:0.6))
+            bmi = BMI(value: bmiValue, advice: "YOUR BMI IS UNDERWEIGHT! ".loclaized, color:.systemGreen)
                     
         }else if bmiValue < 24.9{
-            bmi = BMI(value: bmiValue, advice: "YOUR BMI IS NORMAL AND IDEAL!".loclaized, color:#colorLiteral(red:0.1249019691,green:0.333980407,blue:0.4784313223,alpha:0.6))
+            bmi = BMI(value: bmiValue, advice: "YOUR BMI IS NORMAL AND IDEAL!".loclaized, color:.systemGreen)
+                      
             
         }else{
             
-            bmi = BMI(value: bmiValue, advice: "YOUR BMI IS OVERWEIGHT!".loclaized, color: #colorLiteral(red:0.223459691,green:0.250980407,blue:0.4284319891,alpha:0.6))
+            bmi = BMI(value: bmiValue, advice: "YOUR BMI IS OVERWEIGHT!".loclaized, color: UIColor .systemYellow)
         }
         
         

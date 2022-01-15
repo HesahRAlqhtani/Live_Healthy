@@ -27,33 +27,11 @@ class ProfileSettingsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
 
-//    fileprivate func changeApperance() {
-//        if overrideUserInterfaceStyle == .dark {
-//            overrideUserInterfaceStyle = .light
-//        } else {
-//            overrideUserInterfaceStyle = .dark
-//        }
-//        if #available(iOS 13.0, *){
-//            let appDelegate = UIApplication.shared.windows.first
-//            if(sender as AnyObject).isOn {
-//                appDelegate?.overrideUserInterfaceStyle = .dark
-//                return
-//            }
-//            appDelegate?.overrideUserInterfaceStyle = .light
-//            return
-//
-//
-//        }
-//  }
+
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {

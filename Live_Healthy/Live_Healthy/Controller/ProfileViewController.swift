@@ -29,13 +29,13 @@ class ProfileViewController: UIViewController {
             self.email.text = profile.email
             self.phone.text = profile.phone
             self.gender.text = profile.gender
-
+            
         }
-
+        
         if Auth.auth().currentUser?.uid == nil {
-
+            
         }else{
-
+            
             
         }
         
@@ -51,5 +51,5 @@ class ProfileViewController: UIViewController {
         }
     }
     
-   
+    
 }
