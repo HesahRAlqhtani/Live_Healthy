@@ -52,7 +52,9 @@ class SignInVc: UIViewController {
     }
     func login(){
         Auth.auth().signIn(withEmail: emaill.text!, password: password.text!) { [weak self]authResult, err in
-            if let error = err {
+            
+            if err != nil {
+                
                 let alert = UIAlertController(title: "Error".loclaized, message:"Sorry , we could not find your account.".loclaized , preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "OK".loclaized , style: .default , handler: nil))
                 self?.present(alert, animated : true)
@@ -73,17 +75,17 @@ class SignInVc: UIViewController {
             
         }
         
-        func dismissTap() {
-            password?.resignFirstResponder()
-            emaill?.resignFirstResponder()
-            
-            guard let email = emaill?.text else { return }
-            (emaill)
-            
-        }
-        
-        
-    }
+//        func dismissTap() {
+//            password?.resignFirstResponder()
+//            emaill?.resignFirstResponder()
+//
+//            guard let email = emaill?.text else { return }
+//            (emaill)
+//
+//        }
+//
+//
+   }
     
     
     

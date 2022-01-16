@@ -49,6 +49,7 @@ class ProfileViewController: UIViewController {
         }catch let sinOutError as NSError {
             print("ERROR Signing Out: %@" ,sinOutError)
         }
+        performSegue(withIdentifier: "SignIn", sender: nil)
     }
     
     
