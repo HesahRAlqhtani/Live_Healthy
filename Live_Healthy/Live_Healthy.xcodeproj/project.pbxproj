@@ -118,9 +118,7 @@
 				9E3042FA27839EC500CC2F8E /* Live_Healthy.entitlements */,
 				9E2056E42761FDD40082EEC1 /* Controller */,
 				9E2056E32761FDBC0082EEC1 /* Model */,
-				9E0B4B58275F69FB00C0063E /* Main.storyboard */,
-				9E0B4B5B275F69FD00C0063E /* Assets.xcassets */,
-				9E0B4B5D275F69FD00C0063E /* LaunchScreen.storyboard */,
+				9E2524882793FB95004C6510 /* View */,
 				9E0B4B60275F69FD00C0063E /* Info.plist */,
 				9E0B4B66275F6B9D00C0063E /* GoogleService-Info.plist */,
 			);
@@ -152,18 +150,76 @@
 			children = (
 				9E0B4B52275F69FB00C0063E /* AppDelegate.swift */,
 				9E0B4B54275F69FB00C0063E /* SceneDelegate.swift */,
-				9E0B4B56275F69FB00C0063E /* SignInVc.swift */,
-				9E4708512760CC30004EEDC9 /* SignUpVc.swift */,
-				9E4708532761666B004EEDC9 /* mainHomeViewController.swift */,
-				9E55334D276735C300D69DAA /* InformationBmiVc.swift */,
-				9E0AE6382768A2F7007FB598 /* AdviceVc.swift */,
-				9EA2C1972781A7470023CC69 /* SecondVC.swift */,
-				9E063EBE277C876200BB5530 /* CoreMotionUser.swift */,
-				9E8A0143276B4F9D007F6F2F /* HistoryBmiTableViewController.swift */,
-				9E8A013F276B2F95007F6F2F /* ProfileSettingsTableViewController.swift */,
-				9E3DD180276A1EB30034D950 /* ProfileViewController.swift */,
+				9E2524892793FC5A004C6510 /* Regester */,
+				9E25248A2793FC89004C6510 /* BmiCalculate */,
+				9E25248B2793FCF1004C6510 /* Advices */,
+				9E25248C2793FD32004C6510 /* StepCounter */,
+				9E25248D2793FD95004C6510 /* Users Histotry */,
+				9E25248E2793FDCE004C6510 /* Profile */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		9E2524882793FB95004C6510 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E0B4B5B275F69FD00C0063E /* Assets.xcassets */,
+				9E0B4B58275F69FB00C0063E /* Main.storyboard */,
+				9E0B4B5D275F69FD00C0063E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9E2524892793FC5A004C6510 /* Regester */ = {
+			isa = PBXGroup;
+			children = (
+				9E0B4B56275F69FB00C0063E /* SignInVc.swift */,
+				9E4708512760CC30004EEDC9 /* SignUpVc.swift */,
+			);
+			path = Regester;
+			sourceTree = "<group>";
+		};
+		9E25248A2793FC89004C6510 /* BmiCalculate */ = {
+			isa = PBXGroup;
+			children = (
+				9E55334D276735C300D69DAA /* InformationBmiVc.swift */,
+				9E4708532761666B004EEDC9 /* mainHomeViewController.swift */,
+			);
+			path = BmiCalculate;
+			sourceTree = "<group>";
+		};
+		9E25248B2793FCF1004C6510 /* Advices */ = {
+			isa = PBXGroup;
+			children = (
+				9E0AE6382768A2F7007FB598 /* AdviceVc.swift */,
+				9EA2C1972781A7470023CC69 /* SecondVC.swift */,
+			);
+			path = Advices;
+			sourceTree = "<group>";
+		};
+		9E25248C2793FD32004C6510 /* StepCounter */ = {
+			isa = PBXGroup;
+			children = (
+				9E063EBE277C876200BB5530 /* CoreMotionUser.swift */,
+			);
+			path = StepCounter;
+			sourceTree = "<group>";
+		};
+		9E25248D2793FD95004C6510 /* Users Histotry */ = {
+			isa = PBXGroup;
+			children = (
+				9E8A0143276B4F9D007F6F2F /* HistoryBmiTableViewController.swift */,
+			);
+			path = "Users Histotry";
+			sourceTree = "<group>";
+		};
+		9E25248E2793FDCE004C6510 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9E3DD180276A1EB30034D950 /* ProfileViewController.swift */,
+				9E8A013F276B2F95007F6F2F /* ProfileSettingsTableViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		9E3042FB27839EC500CC2F8E /* Frameworks */ = {
