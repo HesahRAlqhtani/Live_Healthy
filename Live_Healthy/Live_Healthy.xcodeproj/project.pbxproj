@@ -117,7 +117,7 @@
 			children = (
 				9E3042FA27839EC500CC2F8E /* Live_Healthy.entitlements */,
 				9E2056E42761FDD40082EEC1 /* Controller */,
-				9E2056E32761FDBC0082EEC1 /* Model */,
+				9E2056E32761FDBC0082EEC1 /* Models */,
 				9E2524882793FB95004C6510 /* View */,
 				9E0B4B60275F69FD00C0063E /* Info.plist */,
 				9E0B4B66275F6B9D00C0063E /* GoogleService-Info.plist */,
@@ -125,7 +125,7 @@
 			path = Live_Healthy;
 			sourceTree = "<group>";
 		};
-		9E2056E32761FDBC0082EEC1 /* Model */ = {
+		9E2056E32761FDBC0082EEC1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				9E2056DD2761E98A0082EEC1 /* User.swift */,
@@ -136,13 +136,10 @@
 				9EFAFE94278EC3100032B6DF /* LoclaizabelExtension.swift */,
 				9E18958C276D576800B83E99 /* ProtocolImages.swift */,
 				9E55334F27675BA400D69DAA /* CalculatorBmi.swift */,
-				9E18958A276D532E00B83E99 /* DataTableViewCell.swift */,
-				9E8A0145276B50DD007F6F2F /* HistoryTableViewCell.swift */,
-				9E189586276CBB6700B83E99 /* AdvicesCollectionViewCell.swift */,
 				9E0AE6362768A2A4007FB598 /* MoodPage.swift */,
 				9EFAFE92278EC2210032B6DF /* Localizable.strings */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9E2056E42761FDD40082EEC1 /* Controller */ = {
@@ -163,6 +160,7 @@
 		9E2524882793FB95004C6510 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9E25248F2794245C004C6510 /* Cells */,
 				9E0B4B5B275F69FD00C0063E /* Assets.xcassets */,
 				9E0B4B58275F69FB00C0063E /* Main.storyboard */,
 				9E0B4B5D275F69FD00C0063E /* LaunchScreen.storyboard */,
@@ -220,6 +218,16 @@
 				9E8A013F276B2F95007F6F2F /* ProfileSettingsTableViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		9E25248F2794245C004C6510 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9E8A0145276B50DD007F6F2F /* HistoryTableViewCell.swift */,
+				9E18958A276D532E00B83E99 /* DataTableViewCell.swift */,
+				9E189586276CBB6700B83E99 /* AdvicesCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		9E3042FB27839EC500CC2F8E /* Frameworks */ = {
