@@ -47,6 +47,8 @@ Use core Motion to calculate  user step counter
 
 Use class for history of users
 
+Use collection view
+
 Use function for user defaults
 
 use extention to localization

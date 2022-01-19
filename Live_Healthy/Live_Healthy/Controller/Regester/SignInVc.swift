@@ -22,7 +22,7 @@ class SignInVc: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self, action: #selector(getter: UIView.overrideUserInterfaceStyle))
-                view.addGestureRecognizer(tap)
+        view.addGestureRecognizer(tap)
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -35,11 +35,21 @@ class SignInVc: UIViewController {
     @IBAction func createNewAccount(_ sender: Any) {
         performSegue(withIdentifier: "signUp", sender: nil)
     }
-//    use func for ensure pass and email
+    @IBAction func changePasswordVisibility(_ sender: UIButton) {
+        password.isSecureTextEntry.toggle()
+        if password.isSecureTextEntry {
+            if let image = UIImage(systemName: "eye.fill") {
+                sender.setImage(image, for: .normal)
+            }
+        } else {
+            if let image = UIImage(systemName: "eye.slash.fill") {
+                sender.setImage(image, for: .normal)
+            }
+        }
+    }
+    //    use func for ensure pass and email
     func validateFileds(){
-        
-        
-// use if statment
+        // use if statment
         if emaill.text?.isEmpty == true{
             print("No userNameText".loclaized)
             return
@@ -75,17 +85,7 @@ class SignInVc: UIViewController {
             
         }
         
-//        func dismissTap() {
-//            password?.resignFirstResponder()
-//            emaill?.resignFirstResponder()
-//
-//            guard let email = emaill?.text else { return }
-//            (emaill)
-//
-//        }
-//
-//
-   }
+    }
     
     
     
