@@ -65,6 +65,7 @@ As a user I want to inter my height  & weight so that I can use the application.
 
 As a user I want to  add my data  : name and weight so that I can review next time
 As a user i want calculate my steps 
-![Simulator Screen Shot - iPhone 12 Pro - 2022-01-20 at 10 46 58](https://user-images.githubusercontent.com/91872209/150295657-c6697dca-34e2-4f42-be73-5732edb60c0b.png)
-![Simulator Screen Shot - iPhone 12 Pro - 2022-01-20 at 10 46 37](https://user-images.githubusercontent.com/91872209/150295668-dddb66d2-b3d5-4687-abbb-7b2a90e33473.png)
 
+
+![Simulator Screen Shot - iPhone 12 Pro - 2022-01-20 at 10 46 58](https://user-images.githubusercontent.com/91872209/150295981-651a14c2-fd25-4bbc-a55b-e25231650c1f.png)
+![Simulator Screen Shot - iPhone 12 Pro - 2022-01-20 at 10 46 37](https://user-images.githubusercontent.com/91872209/150295990-c0d10f00-9794-43c6-aa33-a6c4e48ce10c.png)
