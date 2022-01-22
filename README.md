@@ -9,7 +9,7 @@ Project name : Live_Healthy...
 ### Project Description :
 Body Mass Index formula to calculate:
 
-Body Mass Index is a simple calculation using a person’s height and weight. The formula is BMI = kg/m2 where kg is a person’s weight in kilograms and m2 is their height in metres squared. A BMI of 25.0 or more is overweight, while the healthy range is 18.5 to 24.9. BMI applies to most adults 18-65 years.
+Body Mass Index is a simple calculation using a person’s height and weight. The formula is BMI = kg/m2 where kg is a person’s weight in kilograms and m2 is their height in metres squared. 
 
 Measurement Units Formula and Calculation Kilograms and meters (or centimeters) Formula: weight (kg) / [height (m)]2
 
@@ -19,15 +19,10 @@ Measurement Units Formula and Calculation Kilograms and meters (or centimeters) 
 - feature 1 : easy to use.
 - feature 2 : BMI can help determine whether a person is at an unhealthy or healthy weight
 _ feature 3 :The application is very flexible.
-
+- feature 4 : can caculate step counter.
 ### Define the scenes :
 
  I used a class to add variables
-
-use array to define user's gender
-
-
-delegates for picker + text field
 
 use if statment If the data is empty, an alert is used to fill in the data.
 
@@ -37,7 +32,6 @@ Get the new view controller using segue.destination.
 
 Use class To identify user information.
 
-use array for segment
 
 use function prints the calc result to label
 
